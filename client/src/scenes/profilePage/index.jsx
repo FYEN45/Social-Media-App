@@ -17,7 +17,7 @@ const ProfilePage = () => {
 
 	const getUser = async () => {
 		const response = await fetch(
-			`http://social-media-app-production-1044.up.railway.app/users/${userId}`,
+			`https://social-media-app-api-rm57.onrender.com/users/${userId}`,
 			{
 				method: 'GET',
 				headers: { Authorization: `Bearer ${token}` },

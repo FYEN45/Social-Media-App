@@ -47,7 +47,7 @@ const MyPostWidget = ({ picturePath }) => {
 		}
 
 		const response = await fetch(
-			'http://social-media-app-production-1044.up.railway.app/posts',
+			'https://social-media-app-api-rm57.onrender.com/posts',
 			{
 				method: 'POST',
 				headers: { Authorization: `Bearer ${token}` },

@@ -14,7 +14,7 @@ const FriendListWidget = ({ userId }) => {
 
 	const getFriends = async () => {
 		const response = await fetch(
-			`http://social-media-app-production-1044.up.railway.app/users/${userId}/friends`,
+			`https://social-media-app-api-rm57.onrender.com/users/${userId}/friends`,
 			{
 				method: 'GET',
 				headers: { Authorization: `Bearer ${token}` },

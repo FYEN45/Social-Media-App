@@ -10,7 +10,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
 	const getPosts = async () => {
 		const response = await fetch(
-			'http://social-media-app-production-1044.up.railway.app/posts',
+			'https://social-media-app-api-rm57.onrender.com/posts',
 			{
 				method: 'GET',
 				headers: { Authorization: `Bearer ${token}` },
@@ -22,7 +22,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
 	const getUserPosts = async () => {
 		const response = await fetch(
-			`http://social-media-app-production-1044.up.railway.app/posts/${userId}/posts`,
+			`https://social-media-app-api-rm57.onrender.com/posts/${userId}/posts`,
 			{
 				method: 'GET',
 				headers: { Authorization: `Bearer ${token}` },
